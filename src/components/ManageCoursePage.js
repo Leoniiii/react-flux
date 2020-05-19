@@ -3,7 +3,7 @@ import { Prompt } from "react-router-dom";
 import CourseForm from "./CourseForm";
 import * as courseApi from "../api/courseApi";
 
-const ManageCoursePage = () => {
+const ManageCoursePage = (props) => {
   const [course, setCourse] = useState({
     id: null,
     title: "",
@@ -20,7 +20,9 @@ const ManageCoursePage = () => {
 
   function handleSubmit(event) {
     event.preventDefault();
-    courseApi.saveCourse(course);
+    courseApi.saveCourse(course).then(() => {
+      props.history.push("/courses");
+    });
   }
 
   return (
