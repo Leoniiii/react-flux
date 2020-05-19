@@ -69,11 +69,28 @@
       "slug": "web-components-shadow-dom",
       "authorId": 1,
       "category": "HTML5"
+    },
+    {
+      "id": 11,
+      "title": "El mejor",
+      "authorId": 1,
+      "category": "Leo el mejor",
+      "createdAt": 1589911508688,
+      "slug": "el-mejor"
     }
   ],
   "authors": [
-    { "id": 1, "name": "Cory House" },
-    { "id": 2, "name": "Scott Allen" },
-    { "id": 3, "name": "Dan Wahlin" }
+    {
+      "id": 1,
+      "name": "Cory House"
+    },
+    {
+      "id": 2,
+      "name": "Scott Allen"
+    },
+    {
+      "id": 3,
+      "name": "Dan Wahlin"
+    }
   ]
 }

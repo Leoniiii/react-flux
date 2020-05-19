@@ -4,7 +4,7 @@ import Select from "./common/Select";
 
 function CourseForm(props) {
   return (
-    <form>
+    <form onSubmit={props.onSubmit}>
       <TextInput
         id="title"
         label="Title"

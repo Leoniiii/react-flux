@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Prompt } from "react-router-dom";
 import CourseForm from "./CourseForm";
+import * as courseApi from "../api/courseApi";
 
 const ManageCoursePage = () => {
   const [course, setCourse] = useState({
@@ -17,11 +18,20 @@ const ManageCoursePage = () => {
     });
   }
 
+  function handleSubmit(event) {
+    event.preventDefault();
+    courseApi.saveCourse(course);
+  }
+
   return (
     <>
       <Prompt when={true} message="Are you sure" />
       <h2>Manage Course</h2>
-      <CourseForm course={course} onChange={handleChange} />
+      <CourseForm
+        course={course}
+        onChange={handleChange}
+        onSubmit={handleSubmit}
+      />
     </>
   );
 };
