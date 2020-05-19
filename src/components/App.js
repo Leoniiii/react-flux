@@ -9,7 +9,7 @@ import ManageCoursePage from "./ManageCoursePage";
 
 function App() {
   return (
-    <div className="conteiner-fluid">
+    <div className="container-fluid">
       <Header />
       <Switch>
         <Route path="/" exact component={HomePage} />
