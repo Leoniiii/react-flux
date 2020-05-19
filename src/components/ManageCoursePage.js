@@ -12,13 +12,14 @@ const ManageCoursePage = (props) => {
 
   function handleChange(event) {
     const updateCourse = { ...course, [event.target.name]: event.target.value };
+    setCourse(updateCourse);
   }
 
   return (
     <>
       <Prompt when={true} message="Are you sure" />
       <h2>Manage Course</h2>
-      <CourseForm course={course} handleTitleChange={handleChange} />
+      <CourseForm course={course} onChange={handleChange} />
     </>
   );
 };
