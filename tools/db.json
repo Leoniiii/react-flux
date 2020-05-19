@@ -72,35 +72,19 @@
     },
     {
       "id": 11,
-      "title": "El mejor",
-      "authorId": 1,
-      "category": "Leo el mejor",
-      "createdAt": 1589911508688,
-      "slug": "el-mejor"
+      "title": "sdf",
+      "authorId": 2,
+      "category": "sadfsdgsfgsddfg",
+      "createdAt": 1589927601691,
+      "slug": "sdf"
     },
     {
       "id": 12,
-      "title": "lwo",
+      "title": "sdadsf",
       "authorId": 2,
-      "category": "dsafdsfsdacv ",
-      "createdAt": 1589918805648,
-      "slug": "lwo"
-    },
-    {
-      "id": 13,
-      "title": "dfg",
-      "authorId": 1,
-      "category": "dfgsdf",
-      "createdAt": 1589918823658,
-      "slug": "dfg"
-    },
-    {
-      "id": 14,
-      "title": "sdffsadgffsg",
-      "authorId": 2,
-      "category": "ffffff",
-      "createdAt": 1589926246863,
-      "slug": "sdffsadgffsg"
+      "category": "sadfsdgsfgsddfg",
+      "createdAt": 1589927615115,
+      "slug": "sdadsf"
     }
   ],
   "authors": [
