@@ -6,6 +6,7 @@ import * as courseActions from "../actions/courseActions";
 
 const ManageCoursePage = (props) => {
   const [errors, setErrors] = useState({});
+  const [courses, setCourses] = useState(courseStore.getCourses());
   const [course, setCourse] = useState({
     id: null,
     title: "",
@@ -14,11 +15,19 @@ const ManageCoursePage = (props) => {
   });
 
   useEffect(() => {
+    courseStore.addChangeListener(onChange);
     const slug = props.match.params.slug; //From the path '/courses/:slug'
-    if (slug) {
+    if (courses.length === 0) {
+      courseActions.loadCourses();
+    } else if (slug) {
       setCourse(courseStore.getCourseBySlug(slug));
     }
+    return () => courseStore.removeChangeListener(onChange);
   }, [props.match.params.slug]);
+
+  function onChange() {
+    setCourse(courseStore.getCourses());
+  }
 
   function handleChange({ target }) {
     setCourse({
