@@ -2,7 +2,7 @@
   "courses": [
     {
       "id": 1,
-      "title": "Securing React Apps with Auth02",
+      "title": "Securing React Apps with Auth0",
       "slug": "react-auth0-authentication-security",
       "authorId": 1,
       "category": "JavaScript"
@@ -11,7 +11,7 @@
       "id": 2,
       "title": "React: The Big Picture",
       "slug": "react-big-picture",
-      "authorId": 2,
+      "authorId": 1,
       "category": "JavaScript"
     },
     {
@@ -72,19 +72,27 @@
     },
     {
       "id": 11,
-      "title": "sdf",
+      "title": "sfd",
       "authorId": 2,
-      "category": "sadfsdgsfgsddfg",
-      "createdAt": 1589927601691,
-      "slug": "sdf"
+      "category": "ffffffffffffffffffffffffffff",
+      "createdAt": 1589978032336,
+      "slug": "sfd"
     },
     {
       "id": 12,
-      "title": "sdadsf",
+      "title": "sdffsadgffsg",
       "authorId": 2,
-      "category": "sadfsdgsfgsddfg",
-      "createdAt": 1589927615115,
-      "slug": "sdadsf"
+      "category": "ff",
+      "createdAt": 1589978177997,
+      "slug": "sdffsadgffsg"
+    },
+    {
+      "id": 13,
+      "title": "sdf",
+      "authorId": 2,
+      "category": "dfg",
+      "createdAt": 1589978357126,
+      "slug": "sdf"
     }
   ],
   "authors": [
