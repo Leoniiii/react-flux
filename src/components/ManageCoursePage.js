@@ -23,7 +23,7 @@ const ManageCoursePage = (props) => {
       setCourse(courseStore.getCourseBySlug(slug));
     }
     return () => courseStore.removeChangeListener(onChange);
-  }, [props.match.params.slug]);
+  }, [courses.length, props.match.params.slug]);
 
   function onChange() {
     setCourse(courseStore.getCourses());
